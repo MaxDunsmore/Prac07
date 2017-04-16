@@ -28,9 +28,6 @@ class Car:
         self.odometer += distance
         return distance
 
-    def get_name(self, name):
-        self.name = input()
-
     def __str__(self):
-        return "{}, fuel={}, odometer={}".\
+        return "car, fuel={}, odometer={}".\
             format(self.fuel, self.odometer)
